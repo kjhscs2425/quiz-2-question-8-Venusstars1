@@ -6,6 +6,15 @@ ends with one of these letters: p, t, n
 
 (This should print out 18 words in total)
 """
+start = ["c", "t", "b"]
+middle = ["a", "o"]
+end = ["p", "t", "n"]
+for index in range(0,3):
+    for index2 in range(0,3):
+        for index3 in (0,1):
+            print(start[index2] + middle[index3] + end[index])
+
+"""
 import random
 for i in range (18):
     start = ["c", "t", "b"]
@@ -15,3 +24,4 @@ for i in range (18):
     end = ["p", "t", "n"]
     end_r = random.choice(end)
     print(start_r, middle_r, end_r)
+"""
